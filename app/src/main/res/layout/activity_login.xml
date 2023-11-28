@@ -32,7 +32,7 @@
         android:layout_height="50dp"
         android:textSize="20sp"
         android:paddingVertical="10dp"
-        android:paddingHorizontal="150dp"
+        android:paddingHorizontal="140dp"
         android:text="회원가입"
         android:textColor="@color/p1"
         android:background="@drawable/border6_p1"
@@ -55,8 +55,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
-        
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
