@@ -13,33 +13,19 @@
         android:theme="@style/Theme.YouXMap"
         tools:targetApi="31">
         <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiz.QuizWrongActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ui.LoginActivity"
-            android:exported="true"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.LOGIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ui.quiz.QuizWrongActivity"
-            android:exported="true"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.QUIZ" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
