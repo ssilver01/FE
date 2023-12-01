@@ -12,7 +12,6 @@ import com.example.youxmap.databinding.FragmentMyPageBinding
 class MyPageFragment : Fragment() {
 
     private var _binding: FragmentMyPageBinding? = null
-
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -28,9 +27,14 @@ class MyPageFragment : Fragment() {
         _binding = FragmentMyPageBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        myPageViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+//        val textView: TextView = binding.textNotifications
+//        myPageViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
+
+        _binding!!.cvMyWrong.setOnClickListener {
+            //오답노트 페이지로 이동
+
         }
         return root
     }
