@@ -21,6 +21,10 @@
             android:exported="false">
         </activity>
         <activity
+            android:name=".ui.quiz.QuizAnswerActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
