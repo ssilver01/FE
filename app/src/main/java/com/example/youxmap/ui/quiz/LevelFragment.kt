@@ -1,5 +1,6 @@
 package com.example.youxmap.ui.quiz
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -19,6 +20,11 @@ class LevelFragment : Fragment() {
     ): View {
         _binding = FragmentLevelBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        binding.tvLevel1Btn.setOnClickListener {
+            val i = Intent(requireContext(), QuizTemplateActivity::class.java)
+            startActivity(i)
+        }
 
 
         return root

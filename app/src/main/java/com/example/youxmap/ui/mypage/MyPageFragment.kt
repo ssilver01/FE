@@ -1,5 +1,6 @@
 package com.example.youxmap.ui.mypage
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.youxmap.databinding.FragmentMyPageBinding
+import com.example.youxmap.ui.quiz.QuizWrongActivity
 
 class MyPageFragment : Fragment() {
 
@@ -32,10 +34,12 @@ class MyPageFragment : Fragment() {
 //            textView.text = it
 //        }
 
-        _binding!!.cvMyWrong.setOnClickListener {
+        binding.cvMyWrong.setOnClickListener {
             //오답노트 페이지로 이동
-
+            val i = Intent(requireContext(), QuizWrongActivity::class.java)
+            startActivity(i)
         }
+
         return root
     }
 

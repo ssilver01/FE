@@ -1,5 +1,6 @@
 package com.example.youxmap.ui.quiz
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.youxmap.R
 import com.example.youxmap.databinding.FragmentQuizBinding
 
 class QuizFragment : Fragment() {
@@ -32,6 +34,10 @@ class QuizFragment : Fragment() {
 //        quizViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
+
+        binding.tvQuizBtn.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.tv_quiz_btn, LevelFragment()).commitAllowingStateLoss()
+        }
         return root
     }
 
