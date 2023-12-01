@@ -4,19 +4,305 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
-
+    tools:context=".ui.home.HomeFragment"
+    android:background="@color/p2">
+    
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/tv_home_title"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:text="Ranking"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_home_user_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/user_img"
+        android:layout_marginTop="63dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationZ="100dp"/>
+    
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="43dp"
+        android:layout_marginHorizontal="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_title"
+        app:cardCornerRadius="20dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white2">
+            <TextView
+                android:id="@+id/tv_home_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="디자인마스터"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="45dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_home_user_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:text="3위"
+                android:textColor="@color/p2"
+                android:textStyle="bold"
+                android:textSize="42sp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_home_user_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_home_coin"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:text="누적 코인 수 50개"
+                android:textColor="@color/gray20"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_home_user_rank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_home_coin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray20"
+                        android:layout_marginHorizontal="18dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!--1~3위 상위권-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_home_second"
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:cardCornerRadius="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/iv_home_second"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/user_img"
+                                android:layout_marginTop="18dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_second_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:text="UI는심플하게"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintTop_toBottomOf="@id/iv_home_second"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_second1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:text="누적 코인 수"
+                                android:textSize="10sp"
+                                android:layout_marginTop="12dp"
+                                app:layout_constraintTop_toBottomOf="@id/tv_home_second_name"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_second_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:text="56개"
+                                android:textSize="10sp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintTop_toBottomOf="@id/tv_home_second1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_home_first"
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:cardCornerRadius="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/iv_home_first"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/user_img"
+                                android:layout_marginTop="18dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_first_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:text="과탑은나의것"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintTop_toBottomOf="@id/iv_home_first"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_first1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:text="누적 코인 수"
+                                android:textSize="10sp"
+                                android:layout_marginTop="12dp"
+                                app:layout_constraintTop_toBottomOf="@id/tv_home_first_name"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_first_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:text="80개"
+                                android:textSize="10sp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintTop_toBottomOf="@id/tv_home_first1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_home_third"
+                        android:layout_width="95dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:cardCornerRadius="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:id="@+id/iv_home_third"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/user_img"
+                                android:layout_marginTop="18dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_third_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="15dp"
+                                android:text="공부공부"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="8dp"
+                                app:layout_constraintTop_toBottomOf="@id/iv_home_third"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_third1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:text="누적 코인 수"
+                                android:textSize="10sp"
+                                android:layout_marginTop="12dp"
+                                app:layout_constraintTop_toBottomOf="@id/tv_home_third_name"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+                            <TextView
+                                android:id="@+id/tv_home_third_coin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:text="48개"
+                                android:textSize="10sp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintTop_toBottomOf="@id/tv_home_third1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:id="@+id/v_home_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray20"
+                        android:layout_marginHorizontal="18dp"
+                        android:layout_marginVertical="20dp"
+                        app:layout_constraintTop_toBottomOf="@id/cv_home_third"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!--4위 이하-->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="38dp"
+                        android:layout_marginBottom="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/v_home_2"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
