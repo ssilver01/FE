@@ -33,10 +33,6 @@ data class  UserPwdSearch(
     @SerializedName("id") val id: String,
     @SerializedName("email") val email: String
 )
-data class Quiz (
-
-
-)
 
 data class Ranking(
     @SerializedName("total_coin") val total_coin: Int,
