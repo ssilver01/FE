@@ -157,7 +157,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="normal"
-        android:text="사용자가 의도하지 않게 동의하기 버튼을 클릭하거나, 동의 여부를 알기 어렵게 표시하는 경우 악의적인 동의 유도를 하지마세요."
+        android:text="옵션이 적으면 라디오 버튼을 사용하세요. 사용자가 모든 옵션을 명확하게 파악할 수 있습니다."
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/v_answer_1"
