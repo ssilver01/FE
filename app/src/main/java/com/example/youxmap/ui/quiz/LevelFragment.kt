@@ -16,6 +16,8 @@ class LevelFragment : Fragment() {
     private var isOpen3 = false
     private var isOpen4 = false
     private var isOpen5 = false
+    private var coin = 0
+    private var total_coin = 0
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -30,6 +32,8 @@ class LevelFragment : Fragment() {
 
         binding.tvLevel1Btn.setOnClickListener {
             val i = Intent(requireContext(), Quiz11Activity::class.java)
+            i.putExtra("coin", coin)
+            i.putExtra("total_coin", total_coin)
             startActivity(i)
         }
 
@@ -41,6 +45,8 @@ class LevelFragment : Fragment() {
                 isOpen4 = true
             } else {
                 val i = Intent(requireContext(), ActivityQuiz41Binding::class.java)
+                i.putExtra("coin", coin)
+                i.putExtra("total_coin", total_coin)
                 startActivity(i)
             }
         }

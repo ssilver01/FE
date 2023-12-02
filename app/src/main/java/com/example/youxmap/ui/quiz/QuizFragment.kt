@@ -38,6 +38,7 @@ class QuizFragment : Fragment() {
         binding.tvQuizBtn.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.tv_quiz_btn, LevelFragment()).commitAllowingStateLoss()
         }
+
         return root
     }
 
