@@ -157,7 +157,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="normal"
-        android:text="사용자가 의도하지 않게 동의하기 버튼을 클릭하거나, 동의 여부를 알기 어렵게 표시하는 경우 악의적인 동의 유도를 하지마세요."
+        android:text="필수 동의 항목과 선택 동의 항목을 구분 없이 나열해 혼란을 야기 하지마세요."
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@id/v_answer_1"
