@@ -13,6 +13,61 @@
         android:theme="@style/Theme.YouXMap"
         tools:targetApi="31">
         <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiz.QuizWrongActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiz.QuizAnswerActivity"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".ui.quiztemplate.Quiz11Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz12Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz13Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz14Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz15Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz41Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz42Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz43Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz44Activity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ui.quiztemplate.Quiz45Activity"
+            android:exported="false">
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

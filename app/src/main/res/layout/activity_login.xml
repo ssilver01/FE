@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <TextView
+        android:id="@+id/tv_login_1"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:textSize="16sp"
+        android:text="올바른 UX/UI 디자인을 위한"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_login_2"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:textSize="16sp"
+        android:text="길 안내를 시작합니다."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintTop_toBottomOf="@id/tv_login_1"/>
+    
+    
+    <TextView
+        android:id="@+id/tv_login_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="140dp"
+        android:text="회원가입"
+        android:textColor="@color/p1"
+        android:background="@drawable/border6_p1"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_login_login"/>
+
+    <TextView
+        android:id="@+id/tv_login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="로그인"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="150dp"
+        android:textColor="@color/white"
+        android:background="@drawable/backgroundp1"
+        android:layout_marginBottom="142dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
