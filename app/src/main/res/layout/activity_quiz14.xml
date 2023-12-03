@@ -62,7 +62,7 @@
         android:id="@+id/tv_14_number"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:text="1/3"
+        android:text="4/5"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/p2"

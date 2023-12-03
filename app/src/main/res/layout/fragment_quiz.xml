@@ -36,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="다크패턴에 대한 설명이 들어갈 부분입니다. 다크패턴에 대한 설명이 들어갈 부분입니다. 다크패턴에 대한 설명이 들어갈 부분입니다. 다크패턴에 대한 설명이 들어갈 부분입니다. 다크패턴에 대한 설명이 들어갈 부분입니다. 다크패턴에 대한 설명이 들어갈 부분입니다. 다크패턴에 대한 설명이 들어갈 부분입니다."
+        android:text="다크패턴이란 사용자 경험을 조작하여 소비자의 동의 없이 원하는 행동을 유도하는 디자인 기법입니다. 다크 패턴은 사용자의 정보를 수집하거나, 제품 또는 서비스의 이용을 강제하거나, 부당한 이득을 취하는 등 부정적인 목적을 가질 수 있습니다.
+ "
         android:textColor="@color/white"
         android:layout_marginTop="36dp"
         android:layout_marginHorizontal="24dp"
