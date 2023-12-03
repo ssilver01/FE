@@ -6,10 +6,12 @@ import com.example.youxmap.databinding.ActivityQuizAnswerBinding
 
 class QuizAnswerActivity : AppCompatActivity(){
     private lateinit var binding: ActivityQuizAnswerBinding
-
+    //미사용
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQuizAnswerBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
+
+
 }
